@@ -1,0 +1,564 @@
+
+html,body {
+    margin: 0;
+    padding: 0;
+    background-image: url("plant2.jpg");
+
+}
+
+/*header*/
+
+header {
+    background-color: rgb(183, 252, 176);
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    z-index: 1;
+    top: 0px;
+
+}
+
+.debut {
+    width: 990px;
+    margin: auto;
+
+}
+
+h1 {
+    width: 325px;
+    font-family: "Amatic SC", serif;
+    font-size: 60px;
+    display: inline-block;
+    margin: auto;
+
+}
+
+h1:active {
+    position: relative;
+    top: 3px;
+}
+
+.icones {
+    vertical-align: top;
+    width: 300px;
+    display: inline-block;
+
+}
+
+.icones .fa, .icones2 .fa {
+    padding: 15px;
+    font-size: 25px;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    margin: 12px;
+
+}
+
+.icones .fa:active, .icones2.fa:active, .icones3 .fa:active {
+    position: relative;
+    top: 5px;
+}
+
+.icones2 {
+
+    display: inline-block;
+    vertical-align: top;
+
+}
+
+.icones2 .fa-shopping-cart {
+    margin-left: 280px;
+
+}
+
+.icones a, .icones2 a {
+    text-decoration: none;
+    color: black;
+
+}
+
+a:hover {
+    opacity: 0.7 ;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+/*footer all pages*/
+
+footer {
+    background-color: rgb(183, 252, 176);
+    width: 100%;
+    margin-top: 600px;
+
+}
+
+.end {
+    margin: auto;
+    width: 630px;
+
+}
+
+footer p {
+    width: 360px;
+    display: inline-block;
+    font-size: 10px;
+    padding : 5px;
+    margin-left: 50px;
+
+}
+
+footer .icones3{
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+
+}
+
+.icones3 .fa {
+    text-align: center;
+    font-size: 20px;
+    width: 15px;
+    height: 15px;
+    margin: 15px;
+
+}
+
+
+
+/* bannière + concept */
+
+.all, .banner{
+    top: 225px;
+    position: relative;
+
+}
+
+.banner {
+    width: 990px;
+    margin: auto;
+    font-family: "Amatic SC", serif;
+    font-size: 30px;
+
+}
+
+/*coté gauche*/
+
+
+.leftbanner {
+    width: 620px;
+    height: 100%;
+    display: inline-block;
+    background-color: rgb(183, 252, 176);
+    text-align: center;
+
+}
+
+
+/*coté droit (concept)*/
+
+.rightbanner {
+    width: 340px;
+    margin-left: 20px;
+    height: 100%;
+    display: inline-block;
+    background-color: rgb(41,171,103);
+    text-align: center;
+
+}
+
+.rightbanner:active {
+    position: relative;
+    top: 3px;
+}
+
+
+/*seconde partie, sous la bannière*/
+
+.all {
+    width: 990px;
+    height: 1500px;
+    position: relative;
+    top: 275px;
+    margin: auto;
+
+}
+
+/*partie gauche */
+
+.gauche {
+    width: 620px;
+    height: 1650px;
+    float: left;
+    clear: both;
+    display: inline-block;
+    background-color: rgba(255, 248, 234, 0.7);
+    }
+
+.droite h3 {
+    font-family: "Homemade Apple", serif;
+    font-size: 27px;
+
+}
+
+/*cases type de box*/
+
+.menu {
+    height: 800px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.menu img {
+    width: 150px;
+    height: auto;
+    display: inline-block;
+    margin-left: 20px;
+    position: relative;
+    top: 35px;
+    border: 1px solid silver;
+    padding: 1px;
+
+}
+
+.menu h3 {
+    background-color: rgb(41,171,103);
+    border: 1px solid black;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    margin-left: 20px;
+    margin-bottom: 50px;
+    font-family: "Homemade Apple",serif;
+    font-size: 25px;
+    display: inline-block;
+
+}
+
+button {
+  background-color: rgb(183, 252, 176);
+  border: none;
+  border-radius: 5px;
+  padding : 7px 15px;
+  display : inline-block;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+button:active {
+  position: relative;
+  top: 3px;
+}
+
+.menu2 h3, .menu3 h3 {
+    background-color: rgb(41,171,103);
+    border: 1px solid black;
+    padding: 25px;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    font-family: "Amatic SC",serif;
+    font-size: 30px;
+
+}
+
+.menu h3:active, .menu2 h3:active, .menu3 h3:active{
+    position: relative;
+    top: 3px;
+}
+
+/*menus terrarium et cache pot*/
+
+.menu2, .menu3 {
+    height: 400px;
+
+}
+
+.menugrid {
+    display: grid;
+    grid-template: 202px / repeat(3,1fr);
+    width: 100%;
+    height: 202px;
+    margin-top: 50px;
+    grid-gap: 5px;
+
+}
+
+
+.box {
+    display: inline-block;
+    border: 1px solid black;
+
+}
+
+
+
+.box img {
+    width: 200px;
+    height:auto;
+
+}
+
+.box p {
+    text-align: center;
+    margin-top: 75px;
+    font-family: "Homemade Apple",serif;
+
+}
+
+.a1, .b1, .a11, .b11 {
+    grid-area: 1 / 1 / span 1 / span 1;
+}
+
+.a2, .b2, .a22, .b22  {
+    grid-area: 1 / 2 / span 1 / span 1;
+}
+
+.a3, .b3, .a33, .b33 {
+    grid-area: 1 / 3 / span 1 / span 1;
+
+}
+
+
+/*overlay texte*/
+
+.a11, .b11, .a22, .b22, .a33, .b33 {
+    height :90%;
+    width: 90%;
+    background-color: rgba(255,255,255,0.9);
+    margin: auto;
+
+}
+
+.a11:hover, .b11:hover, .a22:hover, .b22:hover, .a33:hover, .b33:hover {
+    opacity:0;
+}
+
+
+/*div de droite*/
+
+.droite {
+    width: 310px;
+    clear: both;
+    display: inline-block;
+    margin-left: 20px;
+    background-color: rgba(255, 248, 234, 0.7);
+    padding: 15px;
+
+}
+
+.droite p {
+    line-height: 20px;
+    width: 290px;
+    text-align: justify;
+    font-family: "Comfortaa",serif;
+    font-size: 20px;
+
+}
+
+.droite h3 {
+    text-align: center;
+
+}
+
+.droite iframe {
+    padding: 10px;
+
+}
+
+
+/*page concept*/
+
+.concept, .building {
+    width: 990px;
+    height  600px;
+    background-color: rgba(255, 248, 234, 0.7);
+    position: relative;
+    top: 200px;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+.concept h2 {
+
+    background-color: rgb(41,171,103);
+    border: 1px solid black;
+    padding: 15px;
+    width: 500px;
+    text-align: center;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-family: "Homemade Apple",serif;
+    font-size: 35px;
+    margin: auto;
+
+}
+
+.concept p, .building p {
+    line-height: 35px;
+    width: 900px;
+    text-align: justify;
+    margin-top: 50px;
+    margin-left: 45px;
+    position: relative;
+    font-family: "Comfortaa",serif;
+    font-size: 25px;
+
+}
+
+
+
+/*signature texte*/
+.concept span {
+    font-family: "Amatic SC",serif;
+    font-weight: 700;
+    font-size: 40px;
+    margin-left: 675px;
+
+}
+
+/*page en construction*/
+
+.building {
+    position: relative;
+    top: 200px;
+}
+
+.building img {
+    margin-left: 190px;
+    border-radius: 15%;
+}
+
+/* page panier*/
+
+.cart {
+width : 990px;
+margin : 50px auto;
+background-color: rgba(255, 248, 234, 0.7);
+padding-top : 50px;
+padding-bottom : 50px;
+position: relative;
+top: 200px;
+}
+
+table {
+  text-align: center;
+  margin : auto;
+  border-radius : 5px;
+}
+.col0 {
+  text-align: left;
+  padding-left: 10px;
+}
+
+td {
+  width : 230px;
+  height : 75px;
+  font-family: "Comfortaa",serif;
+  font-size: 15px;
+}
+
+
+
+th {
+  width : 230px;
+  height: 50px;
+  background-color: rgb(183, 252, 176);
+  font-family: "Homemade Apple",serif;
+}
+
+.col2 {
+    background-color: rgb(41,171,103);
+    border-bottom-left-radius: 5px;
+}
+
+.col3 {
+  background-color: rgba(0,0,0,0.2);
+  border-bottom-right-radius: 5px;
+}
+
+.col {
+  border-top-left-radius: 5px;
+}
+
+.col4 {
+  border-top-right-radius: 5px;
+}
+
+#vide, .row1, .row2, .row3, .row4, .row5, .row6, .row7, .row8, .row9, .row10 {
+  background-color : white;
+}
+
+
+
+table p {
+  width: 25px;
+  padding : 10px;
+  display : inline-block;
+}
+
+table button {
+  display : inline-block;
+  background-color: rgb(183, 252, 176);
+  border: none;
+  border-radius: 5px;
+  padding : 7px 15px;
+  cursor: pointer;
+}
+
+table button:active {
+  position: relative;
+  top: 3px;
+}
+
+
+
+/*footer all pages*/
+
+footer {
+    background-color: rgb(183, 252, 176);
+    width: 100%;
+    margin-top: 600px;
+}
+
+/*intérieur du footer*/
+
+.end {
+    margin: auto;
+    width: 630px;
+
+}
+
+footer p {
+    width: 360px;
+    display: inline-block;
+    font-size: 10px;
+    padding : 5px;
+    margin-left: 50px;
+
+}
+
+footer .icones3{
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+
+}
+
+.icones3 .fa {
+    text-align: center;
+    font-size: 20px;
+    width: 15px;
+    height: 15px;
+    margin: 15px;
+
+}

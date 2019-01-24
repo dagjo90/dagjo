@@ -1,0 +1,162 @@
+
+
+.container3{
+	width: 400px;
+	background: #8AD1B9;
+	min-height : 330px;
+	border-radius: 7px;
+}
+
+.title{
+	padding-top: 20px;
+	text-align: center;
+	font-size: 25px;
+	text-transform: uppercase;
+	color: #706558;
+	font-family: 'Hanalei Fill', serif;
+}
+
+.question{
+	padding: 10px;
+	font-size: 15px;
+	min-height: 45px;
+	background: #387A64;
+	margin: 5px;
+	color: #f6f6f6;
+	border-radius: 5px;
+	font-family: 'Acme', serif;
+}
+
+.option{
+	width: 170px;
+	min-height: 45px;
+	display: inline-block;
+	padding: 5px;
+	vertical-align: middle;
+	background: rgba(255, 255, 255, 0.5);
+	margin: 5px 0 5px 10px;
+	color: #000000;
+	border-radius: 5px;
+	font-family: 'Acme', serif;
+}
+
+.option:hover{
+	background: #387A64;
+	color: #f6f6f6;
+}
+
+.option:active {
+	position: relative;
+	top: 5px;
+}
+
+.next-btn{
+	border: none;
+	outline: none;
+	color: black;
+	background: rgba(255, 255, 255, 0.5);
+	width: 150px;
+	height: 35px;
+	cursor: pointer;
+	float: right;
+	margin: 10px;
+	border-radius: 5px;
+	font-family: 'Acme', serif;
+}
+
+.next-btn:hover{
+	background: #387A64;
+	color: #f6f6f6;
+}
+
+.next-btn:active{
+position: relative;
+top: 5px;
+}
+
+.result{
+	height: 100px;
+
+}
+
+.result p {
+	text-align: center;
+	margin-top : 100px;
+	font-size: 35px;
+	font-family:'Acme', serif;
+	color: black;
+	width : 400px;
+}
+
+.result .next-btn {
+	font-size: 20px;
+	height: 40px;
+	width : 150px;
+	margin-left: 125px;
+	float:none;
+}
+
+
+.option input:checked .option{
+	background: #08038C;
+	color: #000;
+}
+
+@media only screen and (max-width: 1000px) {
+
+	.container3{
+		width: 700px;
+		padding: 10px;
+		min-height: 1000px;
+		border-radius: 15px;
+	}
+
+	.title{
+		padding-top: 20px;
+		padding-bottom: 20px;
+		font-size: 50px;
+	}
+
+	.question{
+		padding: 15px;
+		font-size: 35px;
+		min-height: 90px;
+		margin: 5px;
+	}
+
+	.option{
+		display: block;
+		width: 600px;
+		min-height: 100px;
+		font-size: 35px;
+		padding: 15px;
+		margin: 25px auto;
+	}
+
+	.next-btn{
+		width: 350px;
+		font-size: 35px;
+		height: 70px;
+		margin: 10px;
+	}
+
+
+	.result{
+		height: 250px;
+
+	}
+
+	.result p {
+		margin-top : 300px;
+		font-size: 45px;
+		width : 700px;
+	}
+
+	.result .next-btn {
+		font-size: 35px;
+		height: 60px;
+		width : 250px;
+		margin-left: 220px;
+	}
+
+}

@@ -1,0 +1,101 @@
+
+body{
+	background: #8AD1B9;
+}
+
+.container{
+	height: 330px;
+	width: 900px;
+	position: absolute;
+	top:40%;
+	left:50%;
+	padding: 20px;
+	transform: translateX(-50%) translateY(-50%);
+
+}
+
+.title{
+	padding-top: 20px;
+	padding-bottom: 50px;
+	text-align: center;
+	font-size: 70px;
+	text-transform: uppercase;
+	color: #706558;
+	font-family: 'Hanalei Fill', serif;
+}
+
+.question{
+	padding: 20px;
+	font-size: 22px;
+	background: #387A64;
+	margin: 10px 0 10px 0;
+	color: #f6f6f6;
+	border-radius: 5px;
+	font-family: 'Acme', serif;
+}
+
+.option{
+	width: 420px;
+	display: inline-block;
+	padding: 10px 0 10px 15px;
+	vertical-align: middle;
+	background: rgba(255, 255, 255, 0.5);
+	margin: 10px 0 10px 10px;
+	color: #000000;
+	border-radius: 5px;
+	font-family: 'Acme', serif;
+}
+
+.option:hover{
+	background: #387A64;
+	color: #f6f6f6;
+}
+
+.option:active {
+	position: relative;
+	top: 5px;
+}
+
+.next-btn{
+	border: none;
+	outline: none;
+	color: black;
+	background: rgba(255, 255, 255, 0.5);
+	width: 150px;
+	height: 35px;
+	cursor: pointer;
+	float: right;
+	margin: 10px;
+	border-radius: 5px;
+	font-family: 'Acme', serif;
+}
+
+.next-btn:hover{
+	background: #387A64;
+	color: #f6f6f6;
+}
+.next-btn:active{
+position: relative;
+top: 5px;
+}
+
+.result{
+	height: 250px;
+	text-align: center;
+	font-size: 75px;
+	font-family:'Acme', serif;
+}
+
+.result .next-btn {
+	font-size: 35px;
+	height: 60px;
+	width : 260px;
+	margin: auto;
+	float:none;
+}
+
+
+.option input:checked .option{
+	background: #08038C;
+	color: #000;
+}

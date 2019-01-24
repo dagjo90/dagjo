@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Plants In a Box</title>
+    <link href="plant.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf8" />
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Indie+Flower" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Comfortaa|Homemade+Apple|Marck+Script|Open+Sans+Condensed:300" rel="stylesheet">
+
+
+</head>
+
+   <!--Header all pages-->
+
+<header>
+    <div class="debut">
+<h1><a href="PlantInaBox.html">Plants In a Box</a></h1>
+<div class="icones">
+    <a href="https://www.instagram.com/"  class="fa fa-instagram" target="_blank"></a>
+    <a href="https://www.youtube.com/" class="fa fa-youtube-play" target="_blank"></a>
+    <a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+    </div>
+    <div class="icones2">
+    <a href="plants.html" class="fa fa-shopping-cart" target="_blank"></a>
+        </div>
+        </div>
+</header>
+<body>
+
+  <div class="banner">
+
+      <div class="leftbanner">
+  <h2>Votre panier</h2>
+          </div>
+
+       <div class="rightbanner">
+           <h2><a href="building.html"> Check-out ></a></h2>
+
+          </div>
+</div>
+
+<div class="cart">
+
+<table cellspacing="0">
+  <thead>
+  <tr>
+  <th class="row0 col">Produit</th>
+  <th class="row0">Prix unitaire</th>
+  <th class="row0">Quantité</th>
+  <th class="row0 col4">Total</th>
+  </tr>
+  </thead>
+
+  <tbody>
+
+    <tr>
+
+      <td colspan="4" id="vide"> Votre panier est vide. </td>
+
+
+    </tr>
+
+  <tr>
+  <td class="row1 col0" > <button onclick="delCit();">X</button> La citadine</td>
+  <td class="row1">20€</td>
+  <td class="row1"> <button onclick="remCit();">-</button> <p = id="citQ"></p> <button onclick="addCit();">+</button> </td>
+  <td class="row1"> </td>
+      </tr>
+
+  <tr>
+    <td class="row2 col0"> <button onclick="delRur();">X</button> La rurale</td>
+    <td class="row2">20€</td>
+    <td class="row2"> <button onclick="remRur();">-</button> <p = id="rurQ"></p> <button onclick="addRur();">+</button> </td>
+    <td class="row2"></td>
+  </tr>
+
+  <tr>
+    <td class="row3 col0"> <button onclick="delSem();">X</button> La semancière</td>
+    <td class="row3">20€</td>
+    <td class="row3"> <button onclick="remSem();">-</button> <p = id="semQ"></p> <button onclick="addSem();">+</button> </td>
+    <td class="row3"></td>
+  </tr>
+
+  <tr>
+    <td class="row4 col0"> <button onclick="delLitho();">X</button> La lithothérapie</td>
+    <td class="row4">20€</td>
+    <td class="row4"> <button onclick="remLitho();">-</button> <p = id="lithoQ"></p> <button onclick="addLitho();">+</button> </td>
+    <td class="row4"></td>
+  </tr>
+
+  <tr>
+    <td class="row5 col0"> <button onclick="delTer1();">X</button> Terrarium modèle 1</td>
+    <td class="row5">30€</td>
+    <td class="row5"> <button onclick="remTer1();">-</button> <p = id="ter1Q"></p> <button onclick="addTer1();">+</button> </td>
+    <td class="row5"></td>
+  </tr>
+
+  <tr>
+    <td class="row6 col0"> <button onclick="delTer2();">X</button> Terrarium modèle 2</td>
+    <td class="row6">25€</td>
+    <td class="row6"> <button onclick="remTer2();">-</button> <p = id="ter2Q"></p> <button onclick="addTer2();">+</button> </td>
+    <td class="row6"></td>
+  </tr>
+
+  <tr>
+    <td class="row7 col0"> <button onclick="delTer3();">X</button> Terrarium modèle 3</td>
+    <td class="row7">20€</td>
+    <td class="row7"> <button onclick="remTer3();">-</button> <p = id="ter3Q"></p> <button onclick="addTer3();">+</button> </td>
+    <td class="row7"></td>
+  </tr>
+
+  <tr>
+    <td class="row8 col0"> <button onclick="delCache1();">X</button> Cache pot modèle 1</td>
+    <td class="row8">10€</td>
+    <td class="row8"> <button onclick="remCache1();">-</button> <p = id="cache1Q"></p> <button onclick="addCache1();">+</button> </td>
+    <td class="row8"></td>
+  </tr>
+
+  <tr>
+    <td class="row9 col0"> <button onclick="delCache2();">X</button> Cache pot modèle 2</td>
+    <td class="row9">10€</td>
+    <td class="row9"> <button onclick="remCache2();">-</button> <p = id="cache2Q"></p> <button onclick="addCache2();">+</button> </td>
+    <td class="row9"> </td>
+  </tr>
+
+  <tr>
+    <td class="row10 col0"> <button onclick="delCache3();">X</button> Cache pot modèle 3</td>
+    <td class="row10">10€</td>
+    <td class="row10"> <button onclick="remCache3();">-</button> <p = id="cache3Q"></p> <button onclick="addCache3();">+</button> </td>
+    <td class="row10"></td>
+  </tr>
+
+  <tr>
+    <td class="row11"></td>
+    <td class="row11"></td>
+    <td class="row11 col2">Total</td>
+    <td class="row11 col3"></td>
+  </tr>
+
+    </tbody>
+
+
+</table>
+
+</div>
+<script src="cart.js"></script>
+</body>
+
+<!--footer all pages-->
+
+<footer>
+    <div class="end">
+<div class="icones3">
+<a href="https://www.instagram.com/"  class="fa fa-instagram" target="_blank"></a>
+<a href="https://www.youtube.com/" class="fa fa-youtube-play" target="_blank"></a>
+<a href="https://www.facebook.com" class="fa fa-facebook" target="_blank"></a>
+
+</div>
+
+    <p>Rue Lonhienne **, 4000 Liège - info@plantinabox.be - 04 342 ** **</p>
+        </div>
+</footer>
+
+</html>

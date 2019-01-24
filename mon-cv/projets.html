@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mes projets</title>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html;charset=utf8" />
+      <link href="https://fonts.googleapis.com/css?family=Cabin|Raleway|Fjalla+One" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Acme|Hanalei+Fill" rel="stylesheet">
+		<link href="quiz.css" rel="stylesheet">
+
+
+  </head>
+
+  <!-- Navigation -->
+  <header>
+    <div class="nav">
+     <ul>
+       <li><a href="index.html">accueil</a></li>
+       <li><a href="projets.html">projets</a></li>
+       <li><a href="index.html#competences">compétences</a></li>
+       <li><a href="index.html#formation">formation</a></li>
+       <li><a href="index.html#langues">langues</a></li>
+        <li class="submenu"><a href="#creation">créations <p class="fa fa-angle-right"></p></a>
+            <ul>
+            <li><a href="Resto/resto.html" target="_blank">restaurant</a></li>
+            <li><a href="Plant/PlantInaBox.html" target="_blank">Plants in a box</a></li>
+            <li><a href="cinema/cinema.html" target="_blank">cinema</a></li>
+            <li><a href="quiz/quiz.html" target="_blank">quiz (js)</a></li>
+            <li><a href="platform/game.html" target="_blank">Super Cube Boy (js)</a></li>
+              </ul></li>
+
+     </ul>
+
+    </div>
+  </header>
+
+<!-- Navigation fin-->
+  <body>
+
+
+    <div class="blog">
+
+      <div class="white resto">
+        <div class="texte">
+      <h2>Le Ravintola</h2>
+      <p> Pour ce deuxième projet, j’ai décidé de réaliser le site d’un restaurant. Je voulais créer
+          quelque chose de simple et de sobre tout en gardant un coté "site réel". Pour le contenu,
+          je me suis inspiré d’autres restaurants.
+          <br><br>
+          Ce projet m’a permis d’utiliser la propriété <strong>"z-index"</strong> et <strong>"position"</strong> pour créer une une barre
+          d’infos rapides toujours visible meme en descendant sur la page (cette particularité est surtout
+          visible sur page d’infos pratiques). C’est aussi sur ce site que j’ai appris à utiliser le sélecteur <strong>":active"</strong>,
+           couplée à la propriété <strong>«top»</strong>  afin de donner l’impression de
+            cliquer sur un bouton lorsqu’on active un lien. C’était aussi l’occasion de tester
+            l’implémentation de <strong>google maps</strong> dans la section infos pratiques.
+        </p>
+      </div>
+
+<a href="Resto/resto.html" target="_blank"><div class="images">
+  <img src="resto1.png"/>
+  <img src="resto2.png"/>
+  <img src="resto3.png"/>
+</div>
+</a>
+</div>
+
+    </div>
+<div class="couleur">
+    <div class="projet plants">
+      <div class="texte">
+      <h2>Plants In A Box</h2>
+      <p> Pour ce troisième projet, j’avais l’idée de créer un site de commerce en ligne, ma petite
+         amie m’a donnée l’idée de "Plants In A Box" pour lequel j’ai tenté de donner un look qui évoque
+        la nature, notamment à travers les couleurs.
+         <br><br>
+         C’est avec ce site que j’ai découvert l’application "CSS Color Wheel" d’Adobe qui permet
+         de trouver des couleurs complémentaires ou de décliner les couleurs d’un même ton facilement.
+         Sur ce site, j’ai appris à utiliser le selecteur <strong>":hover"</strong> et la <strong>superposition</strong> de cases au
+        sein d’une Grid pour créer un effet simple mais qui donne un aspect dynamique au site.
+         <br><br>
+         Par la suite, j'ai ajouté un <strong>panier dynamique</strong> permettant de transmettre des données entre différentes pages à l'aide de
+          la propriété <strong>"localStorage"</strong> et <strong>"JSON"</strong>. Il est donc possible d'ajouter des articles au panier depuis la page d'accueil et de les retrouver dans le panier.
+           Il est aussi possible de diminuer le nombre d'articles ou de les supprimer.</p>
+       </div>
+       <a href="Plant/PlantInaBox.html" target="_blank"><div class="images">
+         <img src="plant1.png"/>
+        <img src="plant2.png"/>
+        <img src="plant3.png"/>
+      </div>
+    </a>
+
+    </div>
+</div>
+
+
+      <div class="white cinema">
+        <div class="texte">
+          <h2>Retro Vision</h2>
+        <p>En tant que cinéphile, c’est l’une des premières idées qui  m’est venue à l’esprit.
+          C’était l’occasion pour moi de mettre en avant une partie de ma personnalité et de mettre
+          en pratique tout ce que j’avais appris jusqu’ici.
+          <br><br>
+          J’ai appris à utiliser les <strong>"media quieries"</strong> afin que le site utilise la
+          résolution disponible à son avantage pour afficher son contenu. Le site est plus large sur
+          les écrans de <strong>1080p</strong> et plus étroit sur les écrans de plus <strong>basse résolution</strong>. C'était aussi l’occasion de travailler les <strong>tableaux HTML</strong> pour la création d’un horaire.
+          <br><br>
+          J'ai ensuite ajouté un <strong>script</strong> permettant de rendre l'horaire des séances dynamique. L'horaire met en évidence les films qui seront projetés dans la journée selon la date et l'heure.
+         </p>
+          </div>
+
+  <a href="cinema/cinema.html" target="_blank"><div class="images">
+    <img src="cinema1.png"/>
+    <img src="cinema2.png"/>
+    <img src="cinema3.png"/>
+  </div>
+  </a>
+
+</div>
+
+
+    <div class="couleur">
+      <div class="projet">
+      <div class="texte">
+      <h2>Quiz aléatoire en JavaScript</h2>
+      <p>Pour ce deuxième projet en JS, je voulais m’attaquer à quelque chose de plus complexe.
+        L’idée d’un quiz me semblait idéale pour mettre en pratique ce que j’avais appris sur les
+        objets et les <strong>"arrays"</strong>.
+        <br><br>
+        J’ai repris comme base un quiz simple qui proposait une suite fixe de 10 questions et donnait
+         le score au joueur à la fin du jeu. J’ai décidé d’améliorer le jeu en proposant un <strong>contenu
+          aléatoire</strong>. J’ai créé un paquet de 20 questions au total et une <strong>fonction</strong> qui permet de
+          sélectionner aléatoirement 10 questions dans ce paquet.
+        <br><br>
+        Créer cette fonction m’a permis d’utiliser un <strong>"while loop"</strong> pour selectionner et ajouter 10
+         questions dans un <strong>nouvel array</strong> avec la methode <strong>".push()"</strong> tant qu’il n’en comportait pas 10. Pour que cette selection
+          soit aléatoire j’ai tiré aux sorts différents numéros d’index pour l’array initial en
+          utilisant les méthodes <strong>"Math.random"</strong> et <strong>"Math.floor"</strong>.  Afin de ne pas sélectionner la même
+          question plusieurs fois, j’ai ajouté une <strong>condition</strong> a l’aide de la méthode <strong>".includes()"</strong> pour
+          vérifier si la nouvelle question ne se trouvait pas déjà dans Le nouvel array.
+      </p>
+    </div>
+
+    <div class="images2">
+      <div class="quiz">
+
+        <div id="quizContainer" class="container3">
+
+        			<a href="quiz/quiz.html" target="_blank"><div class="title">Super-Quiz</div></a>
+        			<a href="quiz/quiz.html" target="_blank"><div id="question" class="question"></div></a>
+        			<label class="option"><input type="radio" name="option" value="1" /> <span id="opt1"></span></label>
+        			<label class="option"><input type="radio" name="option" value="2" /> <span id="opt2"></span></label>
+        			<label class="option"><input type="radio" name="option" value="3" /> <span id="opt3"></span></label>
+        			<label class="option"><input type="radio" name="option" value="4" /> <span id="opt4"></span></label>
+        			<button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Question suivante</button>
+        		</div>
+
+            <div id="result" class="container3 result" style="display:none;">
+        			<p id="resultat"></p>
+        			<button id="Button" class="next-btn" onclick="location.reload();">Recommencer !</button>
+        		</div>
+
+        		<script src="question.js"></script>
+        		<script src="quiz-script.js"></script>
+
+      </div>
+      <a href="quiz/quiz.html" target="_blank">
+      <img class="quizImg" src="quiz1.png"/></a>
+    </div>
+
+
+</div>
+  </div>
+
+
+<div class="white game">
+
+  <div class="texte">
+  <h2>Super Cube Boy</h2>
+  <p> Très rapidement, l’envie m’est venue de réaliser un jeu de plateforme simple,
+     qui me permettrait d’apprendre programmer le <strong>contrôle</strong> d’un personnage, un peu
+      de <strong>physique</strong> et du <strong>scrolling</strong>. Je me suis d’abord lancé le défi de m’appuyer
+      uniquement sur mes connaissances et de voir jusqu’où je pouvais aller seul. Malgré ses limites et ses lacunes,
+       j’ai réussi à créer un petit jeu fonctionnel, avec un ennemi et son <strong>pattern</strong>,
+        avec des <strong>collisions</strong>, des conditions de défaite et de victoire.<br><br>
+
+  J’ai ensuite décidé d’améliorer cette base, j’ai utilisé la <strong>fonction loop</strong> et j’ai
+ appris à rendre les mouvements du personnage plus agréables et <strong>plus fluides</strong>, à
+ améliorer le pattern des ennemis, à prendre en compte plusieurs inputs en
+ utilisant les <strong>"Event Listeners"</strong> ce qui aide considérablement la gestion des
+ sauts. J’ai aussi appris  à centrer le canvas sur le personnage et à arrêter
+ le <strong>scrolling</strong> en arrivant à la fin du niveau. <br><br>
+
+ J’en ai profité pour créer un <strong>level design</strong> plus long et un peu plus esthétique en
+ utilisant les options à ma dispositions avec le canvas, j’ai ajouté des
+ conditions de victoires et de game over plus abouties et un peu de <strong>sons</strong> trouvés
+ sur freesound.org.</p>
+  </div>
+  <a href="platform/game.html" target="_blank">
+    <div class="images2">
+      <img class="bordered" src='game1.png'>
+      <img src='game2.png'>
+      <img src='game3.png'>
+</div>
+</a>
+
+</div>
+
+
+
+
+
+
+  </body>
+
+<!--footer-->
+<div class="footer">
+<footer>
+    <h3> sur les réseaux sociaux :</h3>
+     <div class="icones2">
+
+       <a href="https://www.linkedin.com/in/dan-gjonaj-224105136/" target="_blank"><i class=" fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/da_gjo/" target="_blank"><i class="fab fa-instagram"></i></a>
+          </div>
+</footer>
+</div>
+
+
+
+</html>

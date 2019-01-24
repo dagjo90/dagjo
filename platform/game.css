@@ -1,0 +1,16 @@
+canvas {
+
+
+
+  background-image : url('sky.png');
+}
+
+#camera {
+  margin-left : 50px;
+  margin-top: 50px;
+  width: 900px;
+  height: 500px;
+  overflow:hidden;
+  border: 1px solid black;
+}
+

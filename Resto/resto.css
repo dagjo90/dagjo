@@ -1,0 +1,573 @@
+html, body {
+    margin:0;
+    padding:0;
+    background-image: url(1.jpg);
+
+}
+
+/* en-tete */
+
+header {
+    position: fixed;
+    z-index: 1;
+    background-color:firebrick;
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding: 15px;
+
+}
+
+h1 {
+    margin: auto;
+    width: 195px;
+    padding: 10px;
+    font-family: Lobster, serif;
+    font-weight: 400;
+    font-size: 40px;
+    color: black;
+
+}
+
+h1:active {
+    position: relative;
+    top: 3px;
+}
+
+
+/* general */
+
+p, h3 {
+    font-family: "Crimson Text", serif;
+    line-height: 25px;
+}
+
+h2 {
+    font-family: Righteous, serif;
+    font-weight: 400;
+    margin: auto;
+}
+
+.all {
+    width: 1050px;
+    margin: auto;
+    height: 860px;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+/*pour toute les mentions du nom du restaurant en plein texte*/
+
+span {
+    font-family: Lobster, serif;
+}
+
+
+/* éléments gauche */
+
+/*div de gauche general*/
+
+.carte, .carte2 {
+    position: relative;
+    width: 590px;
+    display: inline-block;
+    top: 150px;
+}
+
+.carte {
+    padding: 21px;
+}
+
+/* div de gauche pour tout sauf page d'accueil*/
+
+.carte2, .carte3 {
+    background-color: rgba(255, 248, 234, 0.7);
+    padding: 20px;
+    border: 1px solid black;
+    height: 425px;
+    margin-bottom: 50px;
+}
+
+.gauche {
+    width: 590px;
+    display: inline-block;
+    padding: 11px;
+
+}
+
+
+
+
+
+
+/*cases-titres gauche */
+
+.carte h2, .carte2 h2, .carte3 h2 {
+    width: 500px;
+    padding: 15px;
+    background-color: firebrick;
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+
+
+.carte h2 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.carte h2:active {
+    position: relative;
+    top: 3px;
+}
+
+
+
+/*élément gauche menu et menu 2 */
+
+ul {
+
+    font-family: "Crimson text",serif;
+    line-height: 35px;
+    font-size: 20px;
+    width: 450px;
+    margin: auto;
+    padding: 25px;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+    font-weight: 600;
+
+}
+
+/* texte page inspiration*/
+
+.inspiration p {
+    width: 500px;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* page informations*/
+.petites .carte2 {
+    height: 300px;
+}
+/*2ème case*/
+
+.carte2 .infos2 {
+    position: relative;
+    width: 590px;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 100px;
+
+}
+
+.carte2 .infos2 p {
+    padding-top: 25px;
+}
+
+
+/*3eme case*/
+
+.carte3 .infos3 iframe {
+    margin-left: 100px;
+    margin-top: 35px;
+
+}
+.carte3 {
+
+position: relative;
+width: 590px;
+display: inline-block;
+top: 150px;
+background-color: rgba(255, 248, 234, 0.7);
+padding-top: 20px;
+border: 1px solid black;
+margin-bottom: 50px;
+}
+
+/*spécifique a la page information pour avoir le footer au bon endroit (espacement)*/
+
+.all2 {
+    width: 1010px;
+    height: 1500px;
+    margin: auto;
+
+}
+
+/*éléments droite toute page*/
+
+.rapide {
+    top: 100px;
+    width: 315px;
+    height: 490px;
+    position: fixed;
+    display: inline-block;
+    text-align: justify;
+    margin-left: 87px;
+    background-color: firebrick;
+    padding-top: 50px;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    z-index: 2;
+
+
+}
+
+/*texte de présentation*/
+
+.rapide p {
+    position: relative;
+    top: 15px;
+    padding: 15px;
+
+}
+
+/* nom restauratrice*/
+
+.rapide h3 {
+    text-align: center;
+    position: relative;
+    top: 15px;
+}
+
+/* photo ronde*/
+
+.rapide img {
+    width: 80px;
+    border-radius: 50%;
+    position: relative;
+    left: 110px;
+    top: 15px;
+    border: 1px solid silver;
+
+}
+
+   /*icones droites*/
+.icones .fa {
+    font-size: 20px;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    border-radius: 50%;
+    margin-top: 7px;
+    margin-left: 15px;
+    color: white;
+}
+
+.icones .fa:active {
+    position: relative;
+    top: 3px;
+}
+
+
+.icones {
+    width: 180px;
+    margin: auto;
+
+}
+
+a:hover {
+    opacity: 0.85;
+}
+
+
+
+/*footer page*/
+
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin-top: 50px;
+
+}
+
+footer p {
+    padding: 15px;
+    width: 550px;
+    margin: auto;
+}
+
+/* Pour les écrans de -1500px*/
+
+@media only screen and (max-width: 1500px) {
+
+
+.all {
+    width: 1000px;
+    height: 540px;
+
+
+}
+
+.all2 {
+  height : 1400px;
+}
+
+/* éléments gauche */
+
+/*div de gauche general -1500px*/
+
+.carte {
+    position: relative;
+    width: 590px;
+    display: inline-block;
+    top: 75px;
+}
+
+.carte2, .carte3  {
+    position: relative;
+    width: 590px;
+    display: inline-block;
+    top: 150px;
+    background-color: rgba(255, 248, 234, 0.7);
+    padding-top: 20px;
+    border: 1px solid black;
+    margin-bottom: 50px;
+
+}
+
+.carte2 {
+  height: 380px;
+}
+
+/* div de gauche pour tout sauf page d'accueil -1500px*/
+.all2 .rapide {
+  margin-left: 75px;
+
+}
+
+/*cases-titres gauche -1500px*/
+
+.carte h2, .carte2 h2, .carte3 h2 {
+    width: 500px;
+    padding: 15px;
+    background-color: firebrick;
+    border: 1px solid black;
+    text-align: center;
+
+}
+
+
+
+.carte h2 {
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.inspiration p {
+  padding-top: 35px;
+
+}
+
+/*éléments droite toute page -1500px*/
+
+.rapide {
+    height: 460px;
+    margin-left: 50px;
+    padding: 0px;
+}
+
+/*texte de présentation -1500px*/
+
+.rapide p {
+    padding-top: 0px;
+    padding-bottom:0px;
+
+
+}
+/* photo ronde -1500px*/
+
+.rapide img {
+    top: 0px;
+}
+
+} /*fin -1500px*/
+
+@media only screen and (max-width: 1000px) {
+
+header {
+  position : relative;
+}
+
+header h1 {
+  font-size: 75px;
+  width: 355px;
+}
+
+  .all {
+      width: 720px;
+      height: 1700px;
+  }
+
+  .all2 {
+    height : 2550px;
+    width: 720px;
+  }
+
+  /* éléments gauche */
+
+  /*div de gauche general -1000px*/
+
+  .carte {
+      position: relative;
+      width: 660px;
+      margin:auto;
+      top : 50px;
+      display: block;
+      padding-left: 0px;
+  }
+
+  .carte2, .carte3  {
+      position: relative;
+      width: 650px;
+      height: auto;
+      display: block;
+      top: 75px;
+      background-color: rgba(255, 248, 234, 0.7);
+      padding-top: 20px;
+      border: 1px solid black;
+      margin: 50px auto;
+
+  }
+
+  .carte2 ul {
+    font-size: 35px;
+    width: 600px;
+  }
+
+.carte2 li {
+  padding: 20px;
+}
+
+.petites .carte2 {
+    height: 400px;
+
+}
+.petites .carte2 p {
+font-size: 35px;
+line-height: 35px;
+}
+
+
+
+
+  /* div de gauche pour tout sauf page d'accueil -1000px*/
+
+  .rapide {
+    z-index: 0;
+    display: block;
+    position: relative;
+    top : 125px;
+    margin: auto;
+    width: 640px;
+    padding : 25px;
+    height: 750px;
+    border-top: 1px solid black;
+  }
+
+  .all2 .rapide {
+    margin: auto;
+
+  }
+
+  .rapide h3 {
+    font-size: 40px;
+  }
+
+  /*cases-titres gauche -1000px*/
+
+  .carte h2 {
+      width: 620px;
+      padding: 30px;
+      font-size: 50px;
+      margin-top: 50px;
+      text-align: center;
+  }
+
+   .carte2 h2, .carte3 h2 {
+     width: 610px;
+     padding-right: 0px;
+     font-size: 50px;
+   }
+
+   .infos2 h2 {
+     padding-right: 20px;
+   }
+
+  .inspiration p {
+    padding-top: 35px;
+    font-size : 35px;
+    line-height: 35px;
+    width: 625px;
+  }
+
+  .carte2 .infos2 p {
+      margin: 25px 0 0 130px;
+      width: 400px;
+  }
+
+  .carte3 .infos3 iframe {
+      margin-left: 75px;
+      margin-top: 35px;
+      width: 500px;
+
+  }
+
+  /*texte de présentation -1000px*/
+
+  .rapide p {
+      padding-top: 0px;
+      padding-bottom:0px;
+      font-size: 35px;
+      line-height: 40px;
+
+
+  }
+  /* photo ronde -1000px*/
+
+  .rapide img {
+    width: 150px;
+    height : auto;
+    margin-left: 130px;
+    top : 25px;
+
+  }
+
+
+  .icones .fa {
+      font-size: 75px;
+      padding: 10px;
+      width: 75px;
+      height: 75px;
+      margin-left: 25px;
+
+  }
+
+  .icones {
+      width: 400px;
+      margin: 25px auto;
+  }
+
+  footer p {
+      padding: 15px;
+      width: 600px;
+      line-height: 35px;
+      font-size : 35px;
+      margin: auto;
+  }
+
+}
