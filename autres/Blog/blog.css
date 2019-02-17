@@ -1,0 +1,500 @@
+
+html,body {
+    margin: 0;
+    padding: 0;
+}
+
+/*en-tête toutes pages*/
+
+body  {
+    background: rgba(255,255,255,1);
+    background: -moz-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 9%, rgba(255,255,255,1) 50%, rgba(237,237,237,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,1)), color-stop(9%, rgba(246,246,246,1)), color-stop(50%, rgba(255,255,255,1)), color-stop(100%, rgba(237,237,237,1)));
+    background: -webkit-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 9%, rgba(255,255,255,1) 50%, rgba(237,237,237,1) 100%);
+    background: -o-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 9%, rgba(255,255,255,1) 50%, rgba(237,237,237,1) 100%);
+    background: -ms-linear-gradient(left, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 9%, rgba(255,255,255,1) 50%, rgba(237,237,237,1) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 9%, rgba(255,255,255,1) 50%, rgba(237,237,237,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+
+
+}
+
+
+
+.navigation {
+    border-bottom: 1px solid silver;
+    width: 950px;
+    margin: auto;
+    text-align: center;
+    font-variant: small-caps;
+    font-family: cursive;
+    color: grey;
+    position: relative;
+
+}
+
+.navigation li {
+    display: inline-block;
+    text-align: center;
+    padding: 10px;
+
+}
+.icones a {
+    text-decoration: none;
+    color: black;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: gray;
+}
+
+.navigation a:hover, .icones a:hover, .banner a:hover, footer a:hover {
+    opacity: 0.7;
+}
+
+.navigation .submenu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: black;
+    text-align: left;
+    width: 310px;
+    padding-left: 20px;
+    margin-top: 10px;
+
+}
+.un, .deux, .trois {
+    display: inline-block;
+}
+
+.un, .deux {
+  padding: 0 20px 0 0;
+  margin-bottom : 10px;
+}
+
+.deux, .trois {
+  padding-left: 20px;
+}
+
+.trois p {
+  top : 40px;
+  position: absolute;
+}
+
+.dropdown p {
+    display: block;
+
+}
+
+.dropdown h4 {
+  margin-bottom: 0;
+}
+
+.submenu:hover .dropdown {
+    display: block;
+}
+
+.dropdown:hover {
+    display: block;
+}
+.banner {
+    width: 950px;
+    height: auto;
+    top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+    margin: auto;
+
+}
+
+.banner img {
+    width: 950px;
+}
+
+/* fin de la navigation pour toutes les pages*/
+
+/*footer toutes pages*/
+footer{
+    top: 100px;
+    margin-top: 100px;
+    height: 200px;
+    background-color: black;
+    width: 100%;
+    border-top: 1px solid silver;
+    position: relative;
+
+}
+
+footer h3 {
+    color: gray;
+    margin: auto;
+    width: 410px;
+    font-family: cursive;
+    font-variant: small-caps;
+    padding-top: 20px;
+}
+
+footer .icones2 {
+    width: 520px;
+    margin: auto;
+
+}
+
+footer .fa {
+    padding: 30px;
+    font-size: 80px;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.icones2 .fa-youtube-play{
+    color: white;
+}
+
+.icones2 .fa-instagram {
+
+    color: white;
+}
+.icones2 .fa-ravelry {
+
+    color: white;
+}
+/*fin footer toutes pages*/
+
+
+/* accueil derniers articles */
+
+
+/* slideshow */
+
+.slideshow {
+  position: relative;
+  margin : auto;
+  margin-top : 100px;
+  width : 400px;
+
+}
+
+.slideshow img {
+  width : 100%;
+  height: 100%;
+  border-radius: 7px;
+}
+
+.slideshow p{
+  color: #f2f2f2;
+  font-size: 15px;
+  font-weight: 700;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.slide {
+  display: none;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top : 50%;
+  width: auto;
+  color: rgba(255,255,255,0.8);
+  margin-top: -40px;
+  padding: 0px 10px;
+  font-weight: bold;
+  font-size: 50px;
+
+  border-radius: 0 3px 3px 0;
+}
+
+.prev:hover, .next:hover {
+  opacity : 0.7;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/* titre */
+.dernierement {
+    width: 230px;
+    margin: auto;
+    top : 100px;
+    margin-top: 50px;
+}
+
+.dernierement h2 {
+    border-bottom: 1px solid silver;
+    text-align: center;
+    padding-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* article 1 */
+
+.article1, .article2, .article3 {
+    display: grid;
+    width: 900px;
+    height: 600px;
+    grid-template:  repeat(5, 1fr) / repeat(4,1fr);
+    top: 30px;
+    position: relative;
+    margin: auto;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid silver;
+}
+
+.article1 a, .article2 a, .article3 a{
+    text-decoration: none;
+    color: black;
+
+}
+
+
+.article1 img {
+    width: 450px;
+    height: auto;
+    border-radius: 15%;
+}
+
+.box {
+   display: inline-block;
+
+}
+
+.a1, .b1 {
+    grid-area: 1 / 1 / span 5 / span 2;
+}
+
+.a2, .b2 {
+    grid-area: 1 / 2 / span 1 / span 2;
+    text-align: center;
+
+
+}
+
+.a2 h2, .b2 h2 {
+    border: 2px solid black;
+    background: rgba(255,255,255,0.5);
+    background: -moz-linear-gradient(left, rgba(255,255,255,0.5) 0%, rgba(246,246,246,0.5) 9%, rgba(255,255,255,0.5) 50%, rgba(237,237,237,0.5) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0.5)), color-stop(9%, rgba(246,246,246,0.5)), color-stop(50%, rgba(255,255,255,0.5)), color-stop(100%, rgba(237,237,237,0.5)));
+    background: -webkit-linear-gradient(left, rgba(255,255,255,0.5) 0%, rgba(246,246,246,0.5) 9%, rgba(255,255,255,0.5) 50%, rgba(237,237,237,0.5) 100%);
+    background: -o-linear-gradient(left, rgba(255,255,255,0.5) 0%, rgba(246,246,246,0.5) 9%, rgba(255,255,255,0.5) 50%, rgba(237,237,237,0.5) 100%);
+    background: -ms-linear-gradient(left, rgba(255,255,255,0.5) 0%, rgba(246,246,246,0.5) 9%, rgba(255,255,255,0.5) 50%, rgba(237,237,237,0.5) 100%);
+    background: linear-gradient(to right, rgba(255,255,255,0.5) 0%, rgba(246,246,246,0.5) 9%, rgba(255,255,255,0.5) 50%, rgba(237,237,237,0.5) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1 );
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.a3, .b3 {
+    grid-area: 2 / 3 / span 3 / span 2;
+}
+
+.a3 p, .b3 p {
+    width : 360px;
+    text-align: justify;
+    margin: auto;
+    line-height: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.a4, .b4 {
+    grid-area: 5 / 3/ span 1 / span 2;
+    text-align: center;
+
+}
+
+.a4 p, .b4 p {
+    border: 2px solid black;
+    text-align: center;
+    width: 100px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    padding: 5px;
+
+}
+
+.a4 p:hover, .b4 p:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* article 2 */
+
+.article2 img {
+    width: auto;
+    height: 600px;
+    padding-left: 25px;
+
+}
+
+/* article 3 */
+
+.article3 img {
+    width: 450px;
+    height: auto;
+    display: block;
+
+    border: 1px solid silver;
+
+}
+
+
+
+
+/* fin accueil derniers articles */
+
+/*page a propos */
+.article {
+    position: relative;
+    width: 900px;
+    margin: auto;
+    top: 50px;
+    text-align: justify;
+
+}
+
+.apropos img {
+    width: 800px;
+    height: auto;
+    margin-left: 50px;
+}
+
+.article ul {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 30px;
+    text-align: justify;
+}
+
+.article p {
+    line-height: 30px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.article h2 {
+    font-family: 'Montserrat', sans-serif;
+    width: 650px;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.article h6 {
+    font-family: 'Montserrat', sans-serif;
+    width: 200px;
+    display: inline-block;
+    float: right;
+
+}
+
+.article h3 {
+    font-family: 'Montserrat', sans-serif;
+    width: auto;
+    text-decoration: underline;
+    color:forestgreen;
+    }
+.article h4, .article h5 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.article a {
+    color: gray;
+    text-decoration: none;
+}
+
+.article a:hover {
+    opacity: 0.7;
+}
+
+.article .citation {
+    width: 500px;
+    margin: auto;
+    border: 1px solid silver;
+    padding: 5px;
+    text-align: center;
+
+}
+
+.article .photos {
+    width : 820px;
+    margin: auto;
+}
+
+
+.alocasia img{
+    width: 400px;
+    height: auto;
+    display: inline-block;
+    margin: auto;
+    border: 1px solid silver;
+}
+
+.bullet .photos, .empowerment .photos {
+    width: 660px;
+    margin:auto;
+
+}
+
+.article .videos {
+    width : 570px;
+    margin: auto;
+}
+
+
+
+.building {
+    width: 500px;
+    margin: auto;
+}
+
+/*fin page a propos */
