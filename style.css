@@ -254,7 +254,7 @@ a {
 #competences {
   position: relative;
   width: 915px;
-  height: 650px;
+  height: 750px;
   margin: auto;
   padding-top: 50px;
   padding-bottom: 150px;
@@ -294,14 +294,9 @@ a {
 /*div éléments texte et barres de compétences*/
 .programmation {
   display: inline-block;
-  width: 460px;
+  width: 420px;
   margin: 25px 100px;
-
-}
-
-.prog2 {
-  vertical-align: bottom;
-  margin-left: 0px;
+  padding: 0;
 }
 
 /* texte de gauche */
@@ -312,10 +307,6 @@ a {
 }
 
 /* badge codeacademy*/
-.programmation {
-
-  padding: 0;
-}
 
 .b3 a img:hover {
   opacity: 0.8;
@@ -349,7 +340,7 @@ a {
   vertical-align: middle;
   width: 150px;
   display: inline-block;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
 }
 
 /* Fin case programmation */
