@@ -480,6 +480,10 @@ a {
   grid-area: 1 / 1 / span 1 / span 1;
 }
 
+.e8, .e88 {
+  grid-area: 2 / 2 / span 1 / span 1;
+}
+
 .e2, .e22 {
   grid-area: 1 / 2 / span 1 / span 1;
 }
@@ -496,7 +500,7 @@ a {
   grid-area: 2 / 1 / span 1 / span 1;
 }
 
-.e11, .e22, .e33, .e44, .e66, .e77 {
+.e11, .e22, .e33, .e44, .e66, .e77, .e88 {
   width: 190px;
   height: 190px;
   margin: auto;
@@ -504,7 +508,7 @@ a {
   background-color: rgba(255, 255, 255, 0.95);
 }
 
-.e11 p, .e22 p, .e33 p, .e44 p, .e66 p, .e77 p {
+.e11 p, .e22 p, .e33 p, .e44 p, .e66 p, .e77 p, .e88 p {
   text-align: center;
   margin-top: 65px;
   font-family: "Fjalla One", serif;
@@ -513,7 +517,7 @@ a {
   line-height: 30px;
 }
 
-.e11:hover, .e22:hover, .e33:hover, .e44:hover, .e11:hover p, .e22:hover p, .e33:hover p, .e44:hover p, .e66:hover, .e66 p:hover, .e77:hover, .e77 p:hover {
+.e11:hover, .e22:hover, .e33:hover, .e44:hover, .e11:hover p, .e22:hover p, .e33:hover p, .e44:hover p, .e66:hover, .e66 p:hover, .e77:hover, .e77 p:hover, .e88:hover, .e88 p:hover {
   opacity: 0;
   transition: opacity 0.6s linear;
 }
@@ -886,6 +890,11 @@ footer .fab:active {
     grid-area: 1 / 1 / span 1 / span 1;
   }
 
+  .e8, .e88 {
+    grid-area: 3 / 2 / span 1 / span 1;
+
+  }
+
   .e2, .e22 {
     grid-area: 1 / 2 / span 1 / span 1;
   }
@@ -902,12 +911,12 @@ footer .fab:active {
     grid-area: 3 / 1 / span 1 / span 1;
   }
 
-  .e11, .e22, .e33, .e44, .e66, .e77 {
+  .e11, .e22, .e33, .e44, .e66, .e77, .e88 {
     width: 320px;
     height: 320px;
   }
 
-  .e11 p, .e22 p, .e33 p, .e44 p, .e66 p, .e77 p {
+  .e11 p, .e22 p, .e33 p, .e44 p, .e66 p, .e77 p, .e88 p {
     font-size: 45px;
     line-height: 55px;
     width: auto;
@@ -917,7 +926,7 @@ footer .fab:active {
     margin-top: 50px;
   }
 
-  .e11 h6, .e22 h6, .e33 h6, .e44 h6, .e66 h6, .e77 h6 {
+  .e11 h6, .e22 h6, .e33 h6, .e44 h6, .e66 h6, .e77 h6, .e88 h6 {
     font-size: 30px;
     margin-top: 0px;
   }
